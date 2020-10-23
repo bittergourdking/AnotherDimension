@@ -9,6 +9,8 @@ public class Tester {
     int[][]six = { { 1, 2, 3, 4 }, { 2, 3, 4,  1 }, { 3, 4, 1, 2 } };
     int[][]seven = { { 1, 1, 1 }, { 2, 2, 2 }, { 3, 3, 3 } };
     int[][]eight = { { 2, 2, 2 }, { 2, 2, 2 } };
+    int[][]nine = { { 1, 1 }, { 2, 2 }, { 3, 3 }, { 4, 4 } };
+    int[][]ten = { { 2, 4, 2 }, { 2, 2, 2 } };
     System.out.println(ArrayOps.sum(one));
     System.out.println(ArrayOps.sum(two));
     System.out.println(ArrayOps.sum(three));
@@ -36,5 +38,9 @@ public class Tester {
     System.out.println(ArrayOps.isColMagic(six));
     System.out.println(ArrayOps.isColMagic(seven));
     System.out.println(ArrayOps.isColMagic(eight));
+    System.out.println(ArrayOps.isColMagic(nine));
+    //for isLocationMagic
+    System.out.println(ArrayOps.isLocationMagic(ten, 0, 1));
+    System.out.println(ArrayOps.isLocationMagic(ten, 1, 1));    
   }
 }
