@@ -1,6 +1,6 @@
 public class Tester {
   public static void main(String[] args) {
-    //for sum
+    //for sum (int[] arr)
     int[]one  = { 1, 3, 5 };
     int[]two  = { 10, 20, 30, 40, 50 };
     int[]three = { };
@@ -18,5 +18,11 @@ public class Tester {
     //for sumRows
     System.out.println(ArrayOps.toString(ArrayOps.sumRows(four)));
     System.out.println(ArrayOps.toString(ArrayOps.sumRows(five)));
+    //for largestInRows
+    System.out.println(ArrayOps.toString(ArrayOps.largestInRows(four)));
+    System.out.println(ArrayOps.toString(ArrayOps.largestInRows(five)));
+    //for sum (int[][] arr)
+    System.out.println(ArrayOps.sum(four));
+    System.out.println(ArrayOps.sum(five));
   }
 }
