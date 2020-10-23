@@ -4,10 +4,11 @@ public class Tester {
     int[]one  = { 1, 3, 5 };
     int[]two  = { 10, 20, 30, 40, 50 };
     int[]three = { };
-    int[][]four = {  {  1,  0, 12, -1 },
-                  {  7, -2,  2,  1 },
-                  { -5, -2,  2, -9 } };
+    int[][]four = { { 1, 0, 12, -1 }, { 7, -2, 2, 1 }, { -5, -2, 2, -9 } };
     int[][]five = { };
+    int[][]six = { { 1, 2, 3, 4 }, { 2, 3, 4,  1 }, { 3, 4, 1, 2 } };
+    int[][]seven = { { 1, 1, 1 }, { 2, 2, 2 }, { 3, 3, 3 } };
+    int[][]eight = { { 2, 2, 2 }, { 2, 2, 2 } };
     System.out.println(ArrayOps.sum(one));
     System.out.println(ArrayOps.sum(two));
     System.out.println(ArrayOps.sum(three));
@@ -27,5 +28,9 @@ public class Tester {
     //for sumCols
     System.out.println(ArrayOps.toString(ArrayOps.sumCols(four)));
     System.out.println(ArrayOps.toString(ArrayOps.sumCols(five)));
+    //for isRowMagic
+    System.out.println(ArrayOps.isRowMagic(six));
+    System.out.println(ArrayOps.isRowMagic(seven));
+    System.out.println(ArrayOps.isRowMagic(eight));
   }
 }

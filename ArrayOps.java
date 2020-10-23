@@ -71,11 +71,18 @@ public class ArrayOps {
     return answer;
   }
 
+  public static boolean isRowMagic(int[][] matrix) {
+    boolean answer = true;
+    for (int i = 0; i < matrix.length - 1; i++) {
+      if (sumOfRow(matrix, i) != sumOfRow(matrix, i + 1)) {
+        answer = false;
+      }
+    }
+    return answer;
+  }
 
 
 
 
-
-  //helper methods: find sum of row, find sum of col
 
 }
