@@ -40,7 +40,6 @@ public class ArrayOps {
     }
     return answer;
   }
-
   public static int sum(int[][] arr) {
     int answer = 0;
     for (int i = 0; i < arr.length; i++) {
@@ -48,6 +47,35 @@ public class ArrayOps {
     }
     return answer;
   }
+//Helper methods for Part 5
+  public static int sumOfRow(int[][] matrix, int rowNum) {
+    return sum(matrix[rowNum]);
+  }
+  public static int sumOfCol(int[][] matrix, int colNum) {
+    int answer = 0;
+    for (int i = 0; i < matrix.length; i++) {
+      answer += matrix[i][colNum];
+    }
+    return answer;
+  }
+//Part 5
+  public static int[] sumCols(int[][] matrix) {
+    if (matrix.length == 0) {
+      int[]empty = { };
+      return empty;
+    }
+    int[]answer = new int[matrix[0].length];
+    for (int i = 0; i < answer.length; i++) {
+      answer[i] = sumOfCol(matrix, i);
+    }
+    return answer;
+  }
 
+
+
+
+
+
+  //helper methods: find sum of row, find sum of col
 
 }

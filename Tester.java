@@ -24,5 +24,8 @@ public class Tester {
     //for sum (int[][] arr)
     System.out.println(ArrayOps.sum(four));
     System.out.println(ArrayOps.sum(five));
+    //for sumCols
+    System.out.println(ArrayOps.toString(ArrayOps.sumCols(four)));
+    System.out.println(ArrayOps.toString(ArrayOps.sumCols(five)));
   }
 }
