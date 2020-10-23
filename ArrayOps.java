@@ -70,7 +70,6 @@ public class ArrayOps {
     }
     return answer;
   }
-
   public static boolean isRowMagic(int[][] matrix) {
     boolean answer = true;
     for (int i = 0; i < matrix.length - 1; i++) {
@@ -80,9 +79,16 @@ public class ArrayOps {
     }
     return answer;
   }
-
-
-
-
-
+  public static boolean isColMagic(int[][] matrix) {
+    boolean answer = true;
+    for (int i = 0; i < matrix.length - 1; i++) {
+      if (sumOfCol(matrix, i) != sumOfCol(matrix, i + 1)) {
+        answer = false;
+      }
+    }
+    return answer;
+  }
+  public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+    return (sumOfRow(matrix, row) == sumOfCol(matrix, col));
+  }
 }
